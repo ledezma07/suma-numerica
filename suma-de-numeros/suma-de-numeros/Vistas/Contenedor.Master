@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Contenedor.master.cs" Inherits="suma_de_numeros.Vistas.Contenedor" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <h1>
+  PRO - GIT
+                    </h1>
+                  
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="INICIO" Value="INICIO"></asp:MenuItem>
+                            <asp:MenuItem Text="A QUE NOS DEDICAMOS" Value="A QUE NOS DEDICAMOS"></asp:MenuItem>
+                            <asp:MenuItem Text="REGISTRATE" Value="REGISTRATE"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <h3>
+                        Pie de Pagina
+                    </h3>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
